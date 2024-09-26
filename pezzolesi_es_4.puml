@@ -1,0 +1,10 @@
+@startuml
+
+class Calcolatrice {
+-{static} addizzione
+-{static} sottrazzione 
+-{static} moltiplicazione
+-{static} divisione
++__init__(num_1, num_2)
+}
+@enduml
