@@ -1,0 +1,23 @@
+@startuml name
+
+class Dipendente
+{
+   def __init__(self, nome:str, stipendio:int):
+        self.nome = nome
+        self.stipendio = stipendio
+}
+class Manager
+{
+    def __init__(self, nome:str, stipendio:int, numero_di_team:int):
+        super().__init__(nome, stipendio)
+        self.numero_di_team = numero_di_team
+}
+class Svilupppatore
+{
+    def __init__(self,nome:str, stipendio:int,linguaggio_di_programmazione:str):
+        super().__init__(nome, stipendio)
+        self.linguaggio_di_programmazione = linguaggio_di_programmazione
+}
+Dipendente *-- Manager
+Dipendente *-- Svilupppatore
+@enduml
