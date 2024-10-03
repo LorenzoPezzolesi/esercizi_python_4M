@@ -1,7 +1,7 @@
 @startuml es 6
 
 class Pagamento{
-
++ processa pagamento 
 
 }
 class CartaDiCredito{
@@ -9,17 +9,17 @@ class CartaDiCredito{
     + nome_intestatario
     + numero_carta
     + scadenza
-    + cvv
+    - cvv
 }
 class Paypal{
 
     +email : email
-    +password : password
+    -password : password
 
     + processa_pagamento(self)
 
     + effettua_pagamento(metodo_di_pagamento: Pagamento)
     }
 Pagamento<|--Paypal
-Pagamento<|--CartaDiCredito   
-@enduml                              
+Pagamento<|--CartaDiCredito
+@enduml
