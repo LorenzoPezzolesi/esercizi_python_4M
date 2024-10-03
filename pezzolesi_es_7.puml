@@ -1,0 +1,23 @@
+@startuml es 7
+
+class MaterialiBiblioteca{
+    +titolo
+    +anno_pubblicazzione
+    +disponibile
+    + prestito_libro (disponibile: False)
+    + restituzione_libro (disponibile: True)
+}
+
+class Libro{
+
+}
+
+class Rivista{
+
+}
+
+class Dvd{
+
+}
+
+@enduml
