@@ -1,0 +1,13 @@
+@startuml es 10
+
+class Frazione{
+    + numeratore
+    + denominatore
+    - __add__
+    - __sub__ 
+    - __mul__ 
+    - __str__
+
+}
+
+@enduml
