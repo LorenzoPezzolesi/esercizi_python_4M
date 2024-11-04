@@ -1,23 +1,31 @@
 @startuml es 8
 
 class Piatto{
-
+    + nome : str
+    + prezzo : float
+    + disponibile : bool
+    + ordina (disponibile: False)
+    + disponi (disponibile: True)
 }
 
 class Antipasto{
-
+    + ingredienti : list
+    + porzione : str
 }
 
 class Primo{
-    
+    + tipo_pasta : str
+    + sugo : str
 }
 
 class Secondo{
-    
+    + tipo_carne : str
+    + cottura : str
 }
 
 class Dolce{
-    
+    + tipo_dolce : str
+    + calorie : int
 }
 Piatto<|--Antipasto
 Piatto<|--Primo
