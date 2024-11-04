@@ -1,0 +1,26 @@
+@startuml es 8
+
+class Piatto{
+
+}
+
+class Antipasto{
+
+}
+
+class Primo{
+    
+}
+
+class Secondo{
+    
+}
+
+class Dolce{
+    
+}
+Piatto<|--Antipasto
+Piatto<|--Primo
+Piatto<|--Secondo
+Piatto<|--Dolce
+@enduml
