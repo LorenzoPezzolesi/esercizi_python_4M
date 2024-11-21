@@ -1,43 +1,48 @@
 class Libro:
-    def __init__(self, titolo, autore, pagine):
-        self.titolo = titolo
-        self.autore = autore
-        self.pagine = pagine
-    
+    def __init__(self,titolo,autore,pagine):
+        self._titolo = titolo
+        self._autore = autore
+        self._pagine = pagine
     @property
-    def titolo(self):
-        return self._titolo
-    
+    def titolo (self) -> bool|str: 
+        if self._titolo != None:
+            
+            return self._titolo
+        return False
+    @property
+    def autore (self) -> bool|str:
+        if self._autore != None:
+            return self._autore
+        return False
+        
+    @property
+    def pagine (self) -> bool|int:
+        if self._pagine != None:
+            return self._pagine
+        return False
+        
     @titolo.setter
-    def titolo(self, valore):
-        if not valore or not isinstance(valore, str):
-            raise ValueError("Il titolo non può essere vuoto e deve essere una stringa.")
-        self._titolo = valore
-    
-    @property
-    def autore(self):
-        return self._autore
-    
+    def titolo (self,nuovo_titolo:str) -> bool:
+        if self._titolo != '':
+            self._titolo = nuovo_titolo
+            return True
+        return False
     @autore.setter
-    def autore(self, valore):
-        if not valore or not isinstance(valore, str):
-            raise ValueError("L'autore non può essere vuoto e deve essere una stringa.")
-        self._autore = valore
-    
-    @property
-    def pagine(self):
-        return self._pagine
-    
+    def autore (self,nuovo_autore:str) -> bool:
+        if self._autore != '':
+            self._autore = nuovo_autore
+            return True
+        return False
     @pagine.setter
-    def pagine(self, valore):
-        if not isinstance(valore, int) or valore <= 0:
-            raise ValueError("Il numero di pagine deve essere un numero positivo.")
-        self._pagine = valore
-
-
+    def pagine (self,nuove_pagine:int) -> bool:
+        if self._pagine > 0:
+            self._pagine = nuove_pagine
+            return True
+        return False
+                
 # Esempio di utilizzo
 
 libro = Libro("Il Signore degli Anelli", "J.R.R. Tolkien", 1200)
-print(libro.titolo)
-libro.titolo = "Lo Hobbit"
+print(libro.titolo)  # Chiama automaticamente il getter
+libro.titolo = "Lo Hobbit"  # Chiama automaticamente il setter
 print(libro.titolo)
