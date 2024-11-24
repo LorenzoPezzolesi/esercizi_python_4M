@@ -1,8 +1,8 @@
 @startuml es 10
 
 class Frazione{
-    + numeratore
-    + denominatore
+    + numeratore: int
+    + denominatore: int
     - __add__
     - __sub__ 
     - __mul__ 
