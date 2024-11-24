@@ -1,0 +1,29 @@
+@startuml es 12
+
+class Auto {
+    - _marca: str
+    - _modello: str
+    - motore: Motore
+    + __init__(marca, modello)
+    + marca: str
+    + modello: str
+    + marca setter(new_marca)
+    + modello setter(new_modello)
+    + associa_motore(motore: Motore)
+}
+
+class Motore {
+    - _numero_seriale: str
+    - _tipo: str
+    - auto: Auto
+    + __init__(numero_seriale, tipo)
+    + numero_seriale: str
+    + tipo: str
+    + numero_seriale setter(new_numero_seriale)
+    + tipo setter(new_tipo)
+    + associa_auto(auto: Auto)
+}
+
+Auto "1" -- "1" Motore : associa
+
+@enduml
