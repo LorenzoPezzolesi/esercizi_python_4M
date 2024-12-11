@@ -1,0 +1,17 @@
+@startuml es 13
+
+class Stanza{
+    + nome
+    + superficie
+}
+
+class Casa{
+    + indirizzo
+    + proprietario
+    + stanze
+    + aggiungi_stanza(stanza): None
+}
+
+Stanza "0..N" -- "1" Casa: associa
+
+@enduml
