@@ -34,4 +34,4 @@ classDiagram
     Membro "1" -- "1" SchedaAllenamento : ha
     Corso "1" -- "0..*" Membro : iscrizione
     Corso "1" -- "1" Allenatore : insegnato da
-
+```
