@@ -19,3 +19,6 @@ classDiagram
     + libera(): void
     + __str__(): str
     }
+    
+Camera "1..*" --> "1" Albergo: contenuta
+```
