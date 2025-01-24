@@ -6,9 +6,9 @@ classDiagram
     + password: str
     + profilo: Profilo
     + __init__(nome_utente: str, email: str, password: str, profilo: Profilo)
-    + carica_foto(foto: Foto): void
-    + crea_album(album: Album): void
-    + segui(utente: Utente): void
+    + carica_foto(foto: Foto): None
+    + crea_album(album: Album): None
+    + segui(utente: Utente): None
     }
 
     class Profilo {
@@ -25,7 +25,7 @@ classDiagram
     + utente: Utente
     + album: Album
     + __init__(id: int, titolo: str, descrizione: str, data_caricamento: datetime, utente: Utente, album: Album)
-    + aggiungi_commento(commento: Commento): void
+    + aggiungi_commento(commento: Commento): None
     }
 
     class Album {
@@ -34,7 +34,7 @@ classDiagram
     + utente: Utente
     + foto: list[Foto]
     + __init__(titolo: str, descrizione: str, utente: Utente)
-    + aggiungi_foto(foto: Foto): void
+    + aggiungi_foto(foto: Foto): None
     }
 
     class Commento {
