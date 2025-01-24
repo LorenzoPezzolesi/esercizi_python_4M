@@ -56,3 +56,5 @@ Album "1" --> "0..*" Foto: contiene
 Album "1" --> "1" Utente: creato_da
 Commento "1" --> "1" Utente: scritto_da
 Commento "1" --> "1" Foto: riferito_a
+
+```
