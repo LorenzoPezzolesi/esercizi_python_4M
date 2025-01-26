@@ -1,11 +1,12 @@
+```mermaid
 classDiagram
     class Reservation {
         -customer_name: str
         -date_time: str
         -num_people: int
         -status: str
-        +__init__(customer_name: str, date_time: str, num_people: int, status: str)
-        +__str__() str
+        + __init__(customer_name: str, date_time: str, num_people: int, status: str)
+        + __str__ () str
         +cancel()
     }
 
@@ -25,3 +26,4 @@ classDiagram
 
     ReservationSystem --> Reservation
     Main --> ReservationSystem
+```
