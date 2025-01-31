@@ -3,7 +3,7 @@ classDiagram
     class Veicolo {
     +marca : str
     +modello : str
-    +caqrburante : float
+    +carburante : float
     
     
     }
