@@ -35,3 +35,4 @@ Ordine "1..*" --> "1..*" Prodotto: contiene
 Cliente "1" --> "0..*" Recensione: scrivere
 Recensione "1" --> "1" Prodotto: associata
 
+```

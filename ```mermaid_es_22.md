@@ -22,3 +22,4 @@ classDiagram
     }
 
 Automobile "1..*" --> "1" AgenziaNoleggio: contenuta
+```
