@@ -94,19 +94,19 @@ def main():
     zoo = SistemaGestioneZoo()
 
     # Creazione degli habitat
-    savana = Habitat("H001", "Savana Africana", 1000.0)
-    rettilario = Habitat("H002", "Rettilario", 500.0)
+    savana = Habitat("Habitat001", "Savana Africana", 1000.0)
+    rettilario = Habitat("Habitat002", "Rettilario", 500.0)
     zoo.habitats.extend([savana, rettilario])
 
     # Creazione dei veterinari
-    vet1 = Veterinario("V001", "Mario", "Rossi", "Mammiferi", 10)
-    vet2 = Veterinario("V002", "Laura", "Bianchi", "Rettili", 8)
+    vet1 = Veterinario("Veterinario001", "Mario", "Rossi", "Mammiferi", 10)
+    vet2 = Veterinario("Veterinario002", "Laura", "Bianchi", "Rettili", 8)
     zoo.veterinari.extend([vet1, vet2])
 
     # Creazione degli animali
-    leone = Mammifero("M001", "Simba", 5, 180.0, "Folta", 38.5, 110)
-    serpente = Rettile("R001", "Kaa", 3, 5.0, True)
-    giraffa = Mammifero("M002", "Melman", 7, 800.0, "Maculata", 38.0, 450)
+    leone = Mammifero("Mammifero001", "Simba", 5, 180.0, "Folta", 38.5, 110)
+    serpente = Rettile("Rettile001", "Kaa", 3, 5.0, True)
+    giraffa = Mammifero("Mammifero002", "Melman", 7, 800.0, "Maculata", 38.0, 450)
 
     # Aggiunta degli animali al sistema
     for animale in [leone, serpente, giraffa]:
