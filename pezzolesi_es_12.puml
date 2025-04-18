@@ -24,6 +24,6 @@ class Motore {
     + associa_auto(auto: Auto)
 }
 
-Auto "1" -- "1" Motore : associa
+Auto "1" *--* "1" Motore : associa
 
 @enduml
