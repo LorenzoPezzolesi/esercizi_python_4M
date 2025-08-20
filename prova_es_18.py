@@ -17,7 +17,7 @@ class Corso:
         self.durata=durata
         self.iscritti_corsi= iscritti_corsi
     
-class Scheda_di_allenamento:
+class SchedaAllenamento:
     def __init__(self,lista_esercizi:list[str],descrizione_esercizi:str):
         self.lista_esercizi= lista_esercizi
         self.descrizione_esercizi=descrizione_esercizi

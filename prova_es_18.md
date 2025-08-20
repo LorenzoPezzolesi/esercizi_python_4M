@@ -1,4 +1,5 @@
 ```mermaid
+
 classDiagram
     class Allenatore:
         -nome: str
@@ -22,3 +23,5 @@ Allenatore "1" --> "*" Membro
 Membro "*" --> "*" Corso
 Allenatore "1" --> "*" Corso
 Scheda_di_allenamento "*" --> "*" Membro
+
+```
